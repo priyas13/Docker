@@ -61,6 +61,10 @@ It brings the image in our docker repository
 docker run --name <name you want> <docker-image-name>
 ```
 Launches the container (running instance of the <docker-image-name>) locally
+```
+docker rm <container-name>
+```
+Removes the container 
  
 
 

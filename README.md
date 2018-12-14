@@ -49,6 +49,19 @@ Gives the current version of Docker installed
 docker info or docker version 
 ```
 Gives details about our docker
+```
+docker stop <container-id>
+```
+Stops the running container. I don't know why control+c was not working for me in mac. So I tried docker stop from another terminal window.
+```
+docker pull <name of existing image in docker hub>
+```
+It brings the image in our docker repository
+```
+docker run --name <name you want> <docker-image-name>
+```
+Launches the container (running instance of the <docker-image-name>) locally
+ 
 
 
 ## Dockerfile
@@ -128,4 +141,5 @@ CMD [ "init", \
 Dockerfile defines what goes on in the environment inside our container. We need to may ports to the outside world and we should be specific what files we need to "copy in" to the environment. It is the list of steps needed to create the image. 
 
 RUN : It includes any needed packages.
+
 EXPOSE : Make port 8443 8080 available to the world outside this container.

@@ -7,7 +7,7 @@ Docker is used to run software packages called "containers". These containers ar
 
 
 ## Image
-Image is a stand-alone, lightweight, executable package that includes everything needed to run a piece of software, including the code, a runtime, libraries, enviornment variables, and config files. We can create our own docker image or use existing image created by others. To build our own image, we create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it.
+Image is a stand-alone, lightweight, executable package that includes everything needed to run a piece of software, including the code, a runtime, libraries, enviornment variables, and config files. We can create our own docker image or use existing image created by others. To build our own image, we create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Images can be considered as the executable files. It is the building blocks of the docker container. Docker registry are stored in Docker registry which can be either the Docker hub or the local docker repository.
 
 ## Container
 Container is a runtime instance of an image. Containers are isolated from each other and its host machine. 
